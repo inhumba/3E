@@ -55,7 +55,7 @@ $upload-path:						"../../uploads";
 $font-path:							"../fonts";
 
 @if (s24-config(env) == prod) {
-	$img-path:							"https://cdn.724.co.th/img";
+	$img-path:							"../img";
 	$logo-path:							"https://cdn.724.co.th/logos";
 	$icon-path:							"https://cdn.724.co.th/icons";
 	$upload-path:						"https://cdn.724.co.th/uploads";

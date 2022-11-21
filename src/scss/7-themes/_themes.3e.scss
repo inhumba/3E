@@ -2,3 +2,24 @@
    #CUSTOM THEME CSS
    ========================================================================== */
 
+.logo {
+   @include replace-text-with-img("logo.png", center center, 400px, 111px, .4);
+   margin-bottom: 0;
+}
+
+.language {
+
+   .dropdown-toggle, .dropdown-item {
+      color: $font-black-color;
+      font-size: 1.4rem;
+
+      span {
+         margin-left: 5px;
+      }
+   }
+
+   .dropdown-menu {
+      background-color: $secondary-light-color;
+      border: none;
+   }
+}
