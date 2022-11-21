@@ -19,7 +19,34 @@
    }
 
    .dropdown-menu {
-      background-color: $secondary-light-color;
+      background-color: #fff;
       border: none;
+   }
+}
+
+.hero {
+
+   .home-img {
+      max-width: 400px;
+      width: 100%;
+   }
+
+   .title {
+      color: $primary-color;
+      font-weight: 800;
+      font-size: 6.5rem;
+      line-height: 1.1;
+   }
+
+   .lead {
+      color: $primary-color;
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1.4;
+
+      b {
+         font-weight: 600;
+         white-space: nowrap;
+      }
    }
 }

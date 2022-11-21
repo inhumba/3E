@@ -50,6 +50,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/home-img.png" : {
+      "ft" : 32768,
+      "iS" : 75608,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/home-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/logo.png" : {
       "ft" : 32768,
       "iS" : 13119,
