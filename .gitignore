@@ -1,0 +1,15 @@
+node_modules/
+package-lock.json
+pages/.DS_Store
+pages/.DS_Store
+prepros-6.config
+prepros.config
+config.codekit3
+.vscode
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
