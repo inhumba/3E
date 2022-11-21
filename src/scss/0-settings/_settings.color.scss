@@ -1,0 +1,81 @@
+/* ==========================================================================
+   #COLOR PALETTE
+   ========================================================================== */
+
+/**
+ * Color palette
+ */
+
+$palette-color: (
+	"tokio": (
+		"primary": 							#00458B,
+		"secondary": 						#99DDFF,
+		"highlight": 						#3FD2C7,
+		"black": 							#212429,
+		"font-black": 						#495057,
+		"drak-gray": 						#5B5B5B,
+		"secondary-gray": 					#ACB5BD,
+		"border-gray": 						#DDE2E5,
+		"light-gray": 						#F8F9FA,
+		"bg-color":							#ffffff,
+	),
+	"3e": (
+		"primary": 							#7cc1b6,
+		"secondary": 						#fbc8b4,
+		"highlight": 						#ff9178,
+		"font-black": 						#909090,
+		"border-gray": 						#dddddd,
+		"bg-color":							#daefee,
+	)
+);
+
+
+
+/**
+ * Type color palette
+ */
+
+$type-color: (
+	"primary": (
+		"normal": 				#00458B,
+		"disabled":      		#00458B
+	),
+	"secondary": (
+		"normal": 				#42b983,
+		"disabled":      		#e4fce9
+	),
+	"info": (
+		"normal": 				#008fe8,
+		"disabled":      		#ddf6ff
+	),
+	"success": (
+		"normal": 				#00c97b,
+		"disabled":      		#e4fce9
+	),
+	"warning": (
+		"normal": 				#ff8605,
+		"disabled":      		#fff8de
+	),
+	"danger": (
+		"normal": 				#fa6363,
+		"disabled":     		#ffdede
+	),
+
+);
+
+
+
+/**
+ * Social color
+ */
+
+$social-color: (
+ 	"facebook":     	 #1877f2,
+ 	"twitter":      	 #00aced,
+ 	"googleplus":     	 #dd4b39,
+ 	"youtube":      	 #ff0000,
+ 	"instagram":   		 #125688,
+ 	"linkedin":    		 #007bb5,
+ 	"pinterest":   		 #cb2027,
+ 	"line":     		 #00b900
+);

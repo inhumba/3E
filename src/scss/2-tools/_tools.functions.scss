@@ -1,0 +1,187 @@
+/* ==========================================================================
+   #FUNCTIONS
+   ========================================================================== */
+
+/**
+ * Palette color variants
+ *
+ * https://scotch.io/tutorials/aesthetic-sass-2-colors
+ */
+
+@function palette-color($name: 'primary', $variant: 'normal', $opacity: 1) {
+	$color: null;
+
+	$color-spectrum: map-get($palette-color, $name);
+	@if $color-spectrum {
+		$color: map-get($color-spectrum, $variant);
+	}
+
+	$alpha: if(type-of($opacity) == 'number', $opacity, 1);
+	@if $alpha {
+		$color: rgba($color, $alpha);
+	}
+
+	@return $color;
+}
+
+
+
+/**
+ * Type state color
+ */
+
+@function type-color($name: 'primary', $state: 'normal') {
+	$color: null;
+
+	$color-state: map-get($type-color, $name);
+	@if $color-state {
+		$color: map-get($color-state, $state);
+	}
+
+	@return $color;
+}
+
+
+
+/**
+ * Chip color
+ */
+
+@function chip-color($name, $type) {
+	$color: null;
+
+	$color-state: map-get($chip-color, $name);
+	@if $color-state {
+		$color: map-get($color-state, $type);
+	}
+
+	@return $color;
+}
+
+
+
+/**
+ * Slightly lighten a color
+ */
+
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+
+
+/**
+ * Slightly darken a color
+ */
+
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}
+
+
+
+/**
+ * Z-index
+ * Control z-index of each object layer
+ *
+ * Example usage:
+ * .site-header {
+ * 		z-index: z(site-header);
+ * }
+ */
+
+@function z($name) {
+	@if index($z-indexes, $name) {
+		@return ((length($z-indexes) - index($z-indexes, $name)) + 1) * 10;
+	} @else {
+		@warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+		@return null;
+	}
+}
+
+
+
+/**
+ * px to em function 
+ *
+ * Example usage:
+ * h1 {
+ * 		font-size: em(30px);
+ * }
+ */
+
+@function em($pixels, $context: $browser-font-size) {
+	@return ($pixels / $context) * 1em;
+}
+
+
+
+/**
+ * px to rem function 
+ *
+ * Example usage:
+ * h1 {
+ * 		font-size: rem(30px);
+ * }
+ */
+
+@function em($pixels, $context: $browser-font-size) {
+	@return ($pixels / $context) * 1rem;
+}
+
+
+
+/**
+ * em spacing unit
+ *
+ * Example usage:
+ * h1 {
+ * 		margin: em-spacing(m);
+ * }
+ */
+
+@function spacing--em($unit) {
+	@return ((map-get($spacing-unit, $unit)) / $browser-font-size) * 1em;
+}
+
+
+
+/**
+ * rem spacing unit
+ *
+ * Example usage:
+ * h1 {
+ * 		margin: rem-spacing(m);
+ * }
+ */
+
+@function spacing--rem($unit) {
+	@return ((map-get($spacing-unit, $unit)) / $browser-font-size) * 1rem;
+}
+
+
+
+/**
+ * Heading font size to em
+ *
+ * Example usage:
+ * h1 {
+ * 		font-size: heading-size(h1);
+ * }
+ */
+
+@function heading-size($size) {
+	@return ((map-get($heading-size, $size)) / $browser-font-size) * 1rem;
+}
+
+@function heading-size-wp($size) {
+	@return ((map-get($heading-size-wp, $size)) / $browser-font-size) * 1rem;
+}
+
+/**
+ * Table size
+ */
+
+@function table-size($size) {
+	@return ((map-get($table-size, $size)) / $browser-font-size) * 1rem;
+}

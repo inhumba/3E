@@ -1,0 +1,51 @@
+/* ==========================================================================
+   #BLOCKQUOTE
+   ========================================================================== */
+
+/**
+ * Blockquote with support for citation
+ *
+ * Example usage:
+ * <blockquote>
+ *		<p> ... </p>
+ *		<cite> ... </cite>
+ *</blockquote>
+ */
+
+blockquote {
+	background-color: $blockquote-background-color;
+	color: $blockquote-font-color;
+	quotes: '“' '”' '‘' '’';
+	font-style: italic;
+	padding: spacing--rem(m);
+
+	p {
+		margin-top: spacing--rem(m);
+		margin-bottom: 0;
+	}
+
+	p:first-child {
+		margin-top: 0;
+		&::before {
+			content: open-quote;
+		}
+	}
+
+	p:last-of-type {
+		&::after {
+			content: close-quote;
+		}
+	}
+
+	cite {
+		display: inline-block;
+		font-weight: 300;
+		margin-top: spacing--rem(m);
+		margin-left: spacing--rem(s);
+		&::before {
+			@include pseudo('–');
+			margin-left: -(spacing--rem(s));
+		}
+	}
+}
+

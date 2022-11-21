@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #VENDORS SETTING
+   ========================================================================== */
+
+/**
+ * Settings vendors variables
+ */
+
+
+
+ /**
+ * Font Awesome
+ */
+
+$fa-font-path:						"../fonts/fontawesome/webfonts";
+
+@if (s24-config(env) == prod) {
+	$fa-font-path:					"https://cdn.724.co.th/fonts/fontawesome/webfonts";
+}

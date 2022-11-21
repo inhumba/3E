@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #HR
+   ========================================================================== */
+
+/**
+ * Horizontal Rule
+ */
+
+hr {
+	@include push--auto;
+	background-color: $hr-color;
+	border: none;
+	display: block;
+	height: $hr-height;
+	width: $hr-width;
+}

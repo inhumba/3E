@@ -1,0 +1,96 @@
+/* ==========================================================================
+   #COLOR
+   ========================================================================== */
+
+
+/**
+ * Global Color
+ */
+
+$primary-color: palette-color("3e", "primary");
+$secondary-color: palette-color("3e", "secondary");
+$highlight-color: palette-color("3e", "highlight");
+$font-black-color: palette-color("3e", "font-black");
+$global-border-color: palette-color("3e", "border-gray");
+$body-background-color: palette-color("3e", "bg-color");
+
+/**
+ * Heading color
+ */
+
+$heading-font-color: $primary-color;
+
+/**
+ * Base (body) color
+ */
+
+$base-font-color: palette-color("3e", "font-black");
+
+/**
+ * Link color
+ */
+
+$link-font-color: $highlight-color;
+$link-font-color--hover: darken($highlight-color, 7%);
+
+/**
+ * Table color
+ */
+
+$table-border-color: $global-border-color;
+$table-font-color: $base-font-color;
+$table-headings-font-color: $heading-font-color;
+
+/**
+ * Form color
+ */
+
+$input-border-color: $global-border-color;
+$input-background-color: #fff;
+$input-font-color: $base-font-color;
+
+/**
+ * Placeholder color
+ */
+
+$placeholder-font-color: darken($global-border-color, 100%);
+
+/**
+ * Button color
+ */
+
+$button-border-color: $global-border-color;
+$button-background-color: #fff;
+$button-font-color: $base-font-color;
+
+/**
+ * Selection background color
+ */
+
+$selection-background-color: lighten($secondary-color, 20%);
+
+/**
+ * Outline ring color
+ */
+
+$outline-color: lighten($secondary-color, 20%);
+
+/**
+ * Blockquote color
+ */
+
+$blockquote-font-color: palette-color("3e", "font-black");
+$blockquote-background-color: palette-color("3e", "border-gray");
+
+/**
+ * Mark color
+ */
+
+$mark-font-color: #fff;
+$mark-background-color: $primary-color;
+
+/**
+ * Horizontal Rule color
+ */
+
+$hr-color: $global-border-color;

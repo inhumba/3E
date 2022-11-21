@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #HIDDEN
+   ========================================================================== */
+
+/**
+ * Hidden & Visible
+ */
+
+// Hide from both screenreaders and browsers
+@mixin hidden {
+	display: none;
+	visibility: hidden;
+}
+
+// Visible from hide
+@mixin visible($state: 'block') {
+	display: unquote($state);
+	visibility: visible;
+}
+
+// Hide only visually, but have it available for screenreaders
+@mixin vh($focusable: false) {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+
+	@if $focusable {
+		@include vh-focusable;
+	}
+}
+
+@mixin vh-reset {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+// Allow the element to be focusable when navigated to via the keyboard
+@mixin vh-focusable {
+	&:active,
+	&:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+// Hide visually and from screenreaders, but maintain layout
+@mixin invisible {
+	visibility: hidden;
+}

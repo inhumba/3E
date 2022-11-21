@@ -1,0 +1,133 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Fallback fonts
+ */
+
+$fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+
+
+
+/**
+ * Primary fonts
+ */
+
+$mitr: "Mitr", $fallback;
+$prompt: "Prompt", $fallback;
+
+
+
+/**
+ * Letter spacing
+ */
+
+$global-letter-spacing:  0;
+
+
+
+/**
+ * Heading fonts style
+ */
+
+$heading-font-weight:  500;
+$heading-font-lh: 1.2;
+
+
+
+ /**
+ * Heading size
+ */
+ $heading-size-wp: (
+	h1: 		48px,
+	h2: 		40px,
+	h3: 		36px,
+	h4: 		32px,
+	h5: 		24px,
+	h6 : 		18px
+);
+
+$heading-size: (
+	h1: 		32px,  /** title-post */
+	h2: 		28px,  /** highlight-topic */
+	h3: 		26px,  /** title-lg */
+	h4: 		22px,  /** title-sm */
+);
+
+/**
+ * Base fonts style
+ */
+
+$base-font-weight:  400;
+$base-font-lh: 1.8;
+$base-font-weight--bold:  600;
+
+$ibm-weight-thin:100;
+$ibm-weight-extra-light:200;
+$ibm-weight-light:300;
+$ibm-weight-regular:400;
+$ibm-weight-medium: 500;
+$ibm-weight-semi-bold: 600;
+$ibm-weight-bold: 700;
+
+
+/**
+ * detail font size 
+ */
+ $detail: 16px;
+ $detail-blog:16px;
+ $tag:12px;
+ $small:12px;
+ $icon-post:12px;
+ $icon-social:18px;
+
+ i.icon-post{
+	font-size: $icon-post;
+	font-weight: $ibm-weight-regular;
+	padding-right: 5px;
+ }
+
+ label.tag{
+	font-size: $tag;
+	font-weight: $ibm-weight-regular;
+	margin-bottom: 10px;
+}
+
+label.small{
+	font-size: $small;
+	font-weight: $ibm-weight-regular;
+	margin-bottom: 10px;
+}
+
+label.detail{
+	font-size: $detail;
+	font-weight: $ibm-weight-regular;
+	margin-bottom: 10px;
+}
+
+label.detail-blog{
+	font-size: $detail-blog;
+	font-weight: $ibm-weight-regular;
+	margin-bottom: 10px;
+}
+label,a{
+	&.icon-social{
+		 font-size: $icon-social;
+		 font-weight: $ibm-weight-regular;
+		 i{
+			 padding-left: 15px;
+		 }
+	}
+}
+
+
+
+
+/**
+ * Table fonts style
+ */
+$table-font-weight:  400;
+$table-font-lh: 1.6;
+$table-font-weight--bold:  600;
+

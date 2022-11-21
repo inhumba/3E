@@ -1,0 +1,287 @@
+/* ==========================================================================
+   #MIXINS
+   ========================================================================== */
+
+/**
+ * Setting style of a font
+ */
+
+@mixin font($font: false, $size: false, $weight: false, $color: false, $lh: false) {
+	font-family: $font;
+	@if $size {font-size: $size;}
+	@if $weight {font-weight: $weight;}
+	@if $color {color: $color;}
+	@if $lh {line-height: $lh;}
+}
+
+
+
+/**
+ * Convert font size to rem
+ * 1. Fallback to px for IE < 9
+ */
+
+@mixin font-size($size) {
+	font-size: $size + px; /* 1 */
+	font-size: ($size / 10) + rem;
+}
+
+
+
+/**
+ * Input placeholder color
+ */
+
+ @mixin input-placeholder {
+	&.placeholder {@content;}
+	&:-moz-placeholder {@content;}
+	&::-moz-placeholder {@content;}
+	&:-ms-input-placeholder {@content;}
+	&::-webkit-input-placeholder {@content;}
+}
+
+
+
+/**
+ * Selection text color
+ */
+
+@mixin selection {
+	::-moz-selection {@content;}
+	::selection {@content;}
+}
+
+
+
+/**
+ * Media queries
+ *
+ * Example usage:
+ * .class {
+ * 		@include mq('tablet-wide') {
+ *			...
+ *		}
+ * }
+ */
+ 
+@mixin mq($width, $type: min) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+
+
+/**
+ * Pseudo ::before and ::after
+ *
+ * Example usage:
+ * div::after {
+ * 		@include pseudo;
+ *		...
+ * }
+ */
+
+@mixin pseudo($content: '', $display: block, $pos: absolute) {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+
+/**
+ * Replace text with image
+ */
+
+@mixin replace-text-with-img($img, $position, $w, $h, $ratio: 1) {
+	background-image: url(#{$img-path}/#{$img});
+	background-position: $position;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	@if $ratio {
+		background-size: ($w * $ratio) ($h * $ratio);
+		height: $h * $ratio;
+		width: $w * $ratio;
+	} @else {
+		background-size: $w $h;
+		height: $h;
+		width: $w;
+	}
+}
+
+
+
+/**
+ * Replace text with icon
+ */
+
+@mixin replace-text-with-icon($icon, $position, $w, $h, $ratio: 1) {
+	background-image: url(#{$icon-path}/#{$icon});
+	background-position: $position;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	@if $ratio {
+		background-size: ($w * $ratio) ($h * $ratio);
+		height: $h * $ratio;
+		width: $w * $ratio;
+	} @else {
+		background-size: $w $h;
+		height: $h;
+		width: $w;
+	}
+}
+
+
+
+/**
+ * Replace logo
+ */
+
+@mixin replace-logo($logo, $w, $h, $ratio: 1) {
+	background-image: url(#{$logo-path}/#{$logo});
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	@if $ratio {
+		background-size: ($w * $ratio) ($h * $ratio);
+		height: $h * $ratio;
+		width: $w * $ratio;
+	} @else {
+		background-size: $w $h;
+		height: $h;
+		width: $w;
+	}
+}
+
+
+
+/**
+ * Block sizing
+ */
+
+@mixin block($w, $h: $w, $ratio: 1) {
+	display: block;
+	@if $ratio {
+		height: $h * $ratio;
+		width: $w * $ratio;
+	} @else {
+		height: $h;
+		width: $w;
+	}
+}
+
+
+
+/**
+ * Resize image background with ratio
+ */
+
+@mixin resize-img-with-ratio($w, $h, $ratio: 1) {
+	@if $ratio {
+		background-size: ($w * $ratio) ($h * $ratio);
+		height: $h * $ratio;
+		width: $w * $ratio;
+	} @else {
+		background-size: $w $h;
+		height: $h;
+		width: $w;
+	}
+}
+
+
+
+/**
+ * Make thing circle
+ */
+
+@mixin circle($w) {
+	height: $w;
+	width: $w;
+	border-radius: 50%;
+}
+
+
+
+/**
+ * Truncate
+ */
+
+@mixin truncate($truncation-boundary) {
+	max-width: $truncation-boundary;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+/**
+ * Responsive ratio
+ *
+ * Example usage:
+ * div {
+ * 		@include responsive-ratio(16, 9);
+ * }
+ */
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+	$padding: unquote( ( $y / $x ) * 100 + '%' );
+	@if $pseudo {
+		&:before {
+			@include pseudo($pos: relative);
+			width: 100%;
+			padding-top: $padding;
+		}
+	} @else {
+		padding-top: $padding;
+	}
+}
+
+
+
+/**
+ * Add/Remove margins
+ */
+
+// @mixin push--ends($spacing: $spacing-unit) { margin: { top: $spacing; bottom: $spacing; } }
+// @mixin push--sides($spacing: $spacing-unit) { margin: { left: $spacing; right: $spacing; } }
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+// @mixin offset--sides($spacing: $spacing-unit) { margin: { left: -$spacing; right: -$spacing; } }
+// @mixin flush--ends { margin: { top: 0; bottom: 0; } }
+// @mixin flush--sides { margin: { left: 0; right: 0; } }
+
+// add/remove paddings
+// @mixin soft--ends($spacing: $spacing-unit) { padding: { top: $spacing; bottom: $spacing; } }
+// @mixin soft--sides($spacing: $spacing-unit) { padding: { left: $spacing; right: $spacing; } }
+// @mixin hard--ends { padding: { top: 0; bottom: 0; } }
+// @mixin hard--sides { padding: { left: 0; right: 0; } }
+
+
+
+/**
+ * Mixin to drop micro clearfix into a selector. Further reading:
+ * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+ */
+
+@mixin cf {
+	&:after {
+		content: "" !important;
+		display: block !important;
+		clear: both !important;
+	}
+}

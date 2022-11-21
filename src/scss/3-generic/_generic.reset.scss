@@ -1,0 +1,160 @@
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+
+/**
+ * Full height on root parent
+ */
+
+html, body {
+	height: 100%;
+}
+
+
+
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend,
+input, select, textarea, button {
+	margin:  0;
+ 	padding: 0;
+}
+
+
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+
+li > {
+	ol,
+	ul {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/**
+ * Remove default table spacing.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+
+fieldset {
+	min-width: 0; /* [1] */
+	border: none;
+}
+
+input,
+select,
+textarea {
+	appearance: none;
+	background-clip: border-box;
+	border-radius: 0;
+	outline: 0;
+	text-align: left;
+	vertical-align: top;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	width: auto;
+	height: auto;
+}
+
+input[type='checkbox'] {
+	appearance: checkbox;
+}
+
+input[type='radio'] {
+	appearance: radio;
+}
+
+textarea,
+select[size],
+select[multiple] {
+	height: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+// Remove dropdown for IE10+
+select::-ms-expand {
+	display: none;
+}
+
+// Remove IE11 select element selected option state
+select:focus::-ms-value {
+	background-color: transparent;
+	color: inherit;
+}
+
+// Remove select default appearance
+select {
+	-webkit-appearance: none;
+}
+
+// Allow only vertical resizing of textareas
+textarea {
+	resize: vertical;
+}
+
+// Remove search controls
+input[type='search']::-webkit-search-decoration {
+	display: none;
+}
+
+// Button
+button {
+	appearance: none;
+	background: none;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	outline: 0;
+	overflow: visible;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// Disabled states
+[disabled],
+[disabled] * {
+	box-shadow: none;
+	cursor: not-allowed;
+	user-select: none;
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Set basic document styling
+ */
+
+b, strong {
+	font-weight: $base-font-weight--bold;
+}
+
+small {
+	font-size: 80%;
+}
+
+big {
+	font-size: 120%;
+}
+
+mark {
+	background-color: $mark-background-color;
+	color: $mark-font-color;
+}
+

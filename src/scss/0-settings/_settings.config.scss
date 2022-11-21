@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #CONFIG
+   ========================================================================== */
+
+/**
+ * A map of global config settings. Define any project-level configuration,
+ * feature switches, etc. in here.
+ */
+
+$s24-config: (
+	env: prod, // dev, prod
+	healthcheck: false, // true, false
+	debug: false, // true, false
+);
+
+/**
+ * You can access data in this map using the following function:
+ * s24-config(<key>)
+ *
+ * Example usage:
+ * @if (s24-config(debug) == true) { ... }
+ */
+
+@function s24-config($key) {
+	@return map-get($s24-config, $key);
+}

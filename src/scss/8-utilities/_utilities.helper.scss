@@ -1,0 +1,240 @@
+/* ==========================================================================
+   #HELPER
+   ========================================================================== */
+
+/**
+ * Utilities classes are prefixed with a `u--`.
+ */
+
+// Skip link or Screen reader text or Hide only visually
+.u--vh, .u--screen-reader-text {
+	@include vh;
+}
+
+// Hide visually and from screenreaders, but maintain layout
+.u--invisible {
+	@include invisible;
+}
+
+
+
+// Clearfix
+.u--cf {
+	@include cf;
+}
+
+
+
+// Floating
+.u--float {
+
+	&--left {
+		float: left;
+	}
+
+	&--right {
+		float: right;
+	}
+
+	&--clear {
+		clear: both;
+	}
+}
+
+
+
+// Text alignment
+.u--text-align {
+
+	&--left {
+		text-align: left;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+}
+
+
+
+// Vertical alignment
+.u--vertical-align {
+
+	&--top {
+		vertical-align: top;
+	}
+
+	&--middle {
+		vertical-align: middle;
+	}
+
+	&--bottom {
+		vertical-align: bottom;
+	}
+}
+
+
+
+// Bare list
+.u--list--bare {
+	list-style: none;
+	margin-left: 0;
+
+	ul, ol {
+		list-style: none;
+	}
+}
+
+
+
+// Inline list
+.u--list--inline {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		display: inline-block;
+	}
+}
+
+
+// Circle
+.u--circle {
+	border-radius: 50%;
+}
+
+
+
+// Display
+.u--display--table {
+	display: table;
+}
+
+.u--display--table-cell {
+	display: table-cell;
+}
+
+.u--display--block {
+	display: block;
+}
+
+.u--display--inline {
+	display: inline;
+}
+
+.u--display--inline-block {
+	display: inline-block;
+}
+
+.u--display--flex {
+	display: flex;
+}
+
+
+.u--flex-column{
+	flex-direction: column;
+}
+
+
+.u--flex-row{
+	flex-direction: row;
+}
+
+.u--justify-content-end{
+	justify-content: flex-end;
+}
+
+.u--justify-content-start{
+	justify-content: flex-start;
+}
+
+.u--justify-content-center{
+	justify-content: center;
+}
+
+.u--align-items-end{
+	align-items: flex-end;
+}
+
+.u--align-items-start{
+	align-items: flex-start;
+}
+
+.u--align-items-center{
+	align-items: center;
+}
+
+// Padding none
+.pl-0{
+	padding-left: 0 !important;
+}
+.pr-0{
+	padding-right: 0 !important;
+}
+.pt-0{
+	padding-top: 0 !important;
+}
+
+.pb-0{
+	padding-bottom: 0!important;
+}
+
+.pt-s{
+	padding-top:spacing--rem(s);
+}
+
+// Margin none
+.ml-0{
+	margin-left: 0 !important;
+}
+.mr-0{
+	margin-right: 0 !important;
+}
+.mt-0{
+	margin-right: 0 !important;
+}
+
+.mb-0{
+	margin-bottom: 0!important;
+}
+
+
+// Line clamp
+.line-2{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+ }
+
+ .line-3{
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+ }
+
+ .line-height-2{
+	line-height: 2.3rem;
+ }
+ //Text Color
+.text-primary-color{
+	color:$primary-color;
+}
+
+.text-secondary-color{
+	color:$secondary-color;
+}
+
+.text-highlight-color{
+	color:$highlight-color;
+}
+
+.text-font-black-color{
+	color:$font-black-color;
+}
+

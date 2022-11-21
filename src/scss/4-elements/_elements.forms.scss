@@ -1,0 +1,55 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+// form {}
+
+// fieldset {}
+.field{
+	display: flex;
+	align-items: center;
+}
+legend {
+	font-weight: $base-font-weight--bold;
+}
+
+label {
+	display: block;
+	margin-bottom: spacing--rem(xs);
+}
+
+input,
+textarea {
+	@include input-placeholder {
+		color: $placeholder-font-color;
+	}
+}
+
+input,
+textarea,
+select {
+	background-color: $input-background-color;
+	border:  1px solid $input-border-color;
+	border-radius: $input-border-radius;
+	color: $input-font-color;
+	padding: spacing--rem(s);
+}
+
+[type="checkbox"],
+[type="radio"] {
+	display: inline-block;
+	margin-top: -6px;
+	margin-right: spacing--rem(s);
+}
+
+// [type="file"] {}
+
+// textarea {}
+
+// select {}
+
+// option {}
+
+abbr[title] {
+	text-decoration: none;
+}

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #DOCUMENT
+   ========================================================================== */
+
+/**
+ * Set basic document styling
+ */
+
+html {
+	font-size: $html-font-size;
+	min-height: 100%;
+	overflow-y: scroll;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	@include font($prompt, $body-font-size,  $base-font-weight, $base-font-color, $base-font-lh);
+	background-color: $body-background-color;
+	letter-spacing: $global-letter-spacing;
+	color: $font-black-color;
+   
+}
+a{
+	cursor: pointer;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+@if (s24-config(debug) == true) {
+	article {
+		background-color: #fff;
+		margin: 40px;
+		padding: 40px;
+	}
+
+	.btn {
+		margin-right: 5px;
+	}
+}

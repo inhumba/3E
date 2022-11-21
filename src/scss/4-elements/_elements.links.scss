@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+/**
+ * Set basic links styling
+ */
+
+a {
+	color: $link-font-color;
+	text-decoration: none;
+
+	&:hover {
+		color: $link-font-color--hover;
+		text-decoration: none;
+	}
+}

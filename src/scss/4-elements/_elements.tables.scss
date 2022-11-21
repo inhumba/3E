@@ -1,0 +1,82 @@
+/* ==========================================================================
+   #TABLES
+   ========================================================================== */
+
+/**
+ * Set basic style of table
+ *
+ * Example usage:
+ *		<table>
+ *			<caption> ... </caption>
+ *			<thead>
+ *				<tr>
+ *					<th> ... </th>
+ *				</tr>
+ *			</thead>
+ *			<tbody>
+ *				<tr>
+ *					<td> ... </td>
+ *				</tr>
+ *			</tbody>
+ *			<tfoot>
+ *				<tr>
+ *					<td> ... </td>
+ *				</tr>
+ *			</tfoot>
+ *		</table>
+ */
+
+table {
+	border: 1px solid $table-border-color;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1em;
+	line-height: $table-font-lh;
+	font-weight: $table-font-weight;
+	width: 100%;
+
+	caption {
+		font-style: italic;
+		margin-bottom: spacing--rem(s);
+		@include vh;
+	}
+}
+
+th,
+td {
+	border: 1px solid $table-border-color;
+	padding: spacing--rem(s);
+	vertical-align: top;
+}
+
+th {
+	font-weight: $table-font-weight--bold;
+	text-align: left;
+}
+
+thead {
+
+	th {
+		border-bottom-width: 2px;
+	}
+}
+
+tfoot {
+
+	td {
+		font-weight: $table-font-weight--bold;
+	}
+}
+.table-striped{
+	tbody{
+		tr{
+			&:nth-child(odd){
+				background-color: lighten($global-border-color, 10%);
+			}
+			&:nth-child(even){
+				background-color: #ffffff;
+			}
+			
+		}
+	}
+}

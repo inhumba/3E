@@ -1,0 +1,168 @@
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
+
+/**
+ * The global settings file contains any project-wide variables; things that
+ * need to be made available to the entire codebase.
+ */
+
+
+
+ /**
+ * Default browser font size
+ */
+
+$browser-font-size: 16px;
+
+
+
+/**
+ * Font-size of the root HTML element
+ * Set at 100% by default to leave as much default sizing as possible
+ * Could set to 62.5% to use a base font-size of 1rem = 10px (assuming default is 16px)
+ */
+
+$html-font-size: 62.5%; 
+
+
+
+/**
+ * Default font-size of the all element on website
+ * If $html-font-size set to 62.5%, it's base font-size of 1em = 10px (assuming default is 16px)
+ */
+
+$body-font-size: 1.6em;
+
+
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$page-wrapper-width: 1200px;
+
+
+
+/**
+ * Directory path
+ */
+
+$img-path:							"../img";
+$logo-path:							"../../../assets/images";
+$icon-path:							"../../../assets/images";
+$upload-path:						"../../uploads";
+$font-path:							"../fonts";
+
+@if (s24-config(env) == prod) {
+	$img-path:							"https://cdn.724.co.th/img";
+	$logo-path:							"https://cdn.724.co.th/logos";
+	$icon-path:							"https://cdn.724.co.th/icons";
+	$upload-path:						"https://cdn.724.co.th/uploads";
+	$font-path:							"https://cdn.724.co.th/fonts";
+}
+
+
+
+/**
+ * Global spacing unit
+ */
+
+$spacing-unit: (
+	xxs: 		5px,
+	xs: 		10px,
+	sxs: 		15px,
+	s: 			20px,
+	ms: 		30px,
+	m: 			40px,
+	lm: 		60px,
+	l: 			80px,
+	xll: 		120px,
+	xl: 		160px,
+	xxl: 		320px
+);
+/**
+ * Horizontal Rule
+ */
+
+ $hr-height: 1px;
+ $hr-width: 100%;
+
+
+
+/**
+ * Global Radius
+ */
+
+$global-radius: 10px;
+$global-radius--double: $global-radius * 2;
+$global-radius--half: 5px;
+
+$input-border-radius: 10px;
+$button-border-radius: 10px;
+
+
+
+/**
+ * Global Shadow
+ */
+
+$global-card-shadow: 0 2px 5px 0 rgba(158,180,191,0.5);
+
+
+
+/**
+ * Global Animation
+ */
+
+$global-transition-effect: cubic-bezier(0.77, 0, 0.175, 1);
+
+
+
+/**
+ * Table size
+ */
+
+$table-size: (
+	tiny: 				5px,
+	small: 				10px,
+	large: 				40px,
+	huge: 				80px
+);
+
+
+
+/**
+ * Media queries breakpoints
+ */
+
+$breakpoints: (
+	"phone-small": 			320px,
+	"phone": 				360px,
+	"phone-wide": 			640px,
+	"tablet": 				768px,
+	"tablet-wide": 			1024px,
+	"desktop": 				1200px,
+	"desktop-wide": 		1440px,
+	"full-hd": 				1920px
+);
+
+
+
+/**
+ * Z-index layer
+ */
+
+ $z-indexes: (
+	"notification",
+	"popover",
+	"modal",
+	"overlay",
+	"cart",
+	"offcanvas",
+	"sticky",
+	"breadcrumb",
+	"site-header",
+	"site-content",
+	"site-footer"
+);

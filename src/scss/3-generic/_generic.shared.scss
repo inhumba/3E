@@ -1,0 +1,83 @@
+/* ==========================================================================
+   #SHARED
+   ========================================================================== */
+
+/**
+ * Shared declarations for certain elements
+ */
+
+/**
+ * Always declare margins in the same direction:
+ * csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+
+address,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+table,
+fieldset, legend,
+input, select, textarea {
+	font-size: 1em;
+	margin-bottom: spacing--rem(ms);
+}
+
+
+
+/**
+ * Consistent indentation for lists
+ */
+
+dl,
+ol, ul {
+	margin-left: spacing--rem(ms);
+}
+
+
+
+/**
+ * Font size for other elements
+ */
+
+dt, dd,
+li,
+th, td, button {
+	font-size: 1em;
+}
+
+
+
+/**
+ * Remove margin bottom
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	margin-bottom: 0;
+}
+
+
+
+/**
+ * Selection background color
+ */
+
+* {
+	@include selection {
+		background-color: $selection-background-color;
+	}
+}
+
+
+
+/**
+ * Selection background color
+ */
+
+* {
+	&:focus {
+		outline: 1px dotted $outline-color;
+	}
+}

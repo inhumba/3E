@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+button {
+	border: 1px solid $button-border-color;
+	border-radius: $button-border-radius;
+	color: $button-font-color;
+	display: inline-block;
+	padding: spacing--rem(s);
+}

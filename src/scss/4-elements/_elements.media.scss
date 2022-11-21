@@ -1,0 +1,60 @@
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+
+/**
+ * Figure, Self-contained content with support for a caption
+ *
+ * Example usage:
+ * <figure>
+ *		<picture>
+ *			<source srcset="https://via.placeholder.com/1200x600" media="(min-width: 1024px)">
+ *			<img src="//placehold.it/1600x900" alt="Always specify alt text">
+ *		</picture>
+ *		<figcaption>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</figcaption>
+ *	</figure>
+ */
+
+figure {
+	margin-bottom: 0;
+
+	img {
+		@include push--auto;
+		display: block;
+	}
+}
+
+figcaption {
+	@include push--auto;
+	font-style: italic;
+	max-width: 60%;
+	padding: spacing--rem(s);
+	text-align: center;
+}
+
+
+
+/**
+ * 1. Fluid images for responsive purposes
+ * 2. Offset `alt` text from surrounding copy
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ * elements when they are dropped into a page as-is. Safer alternative to using `display: block;`
+ */
+
+img {
+	font-style: italic; /* [2] */
+	max-width: 100%; /* [1] */
+	vertical-align: middle; /* [3] */
+}
+
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * not make the image fluid.
+ */
+
+img[width],
+img[height] {
+	max-width: none;
+}
+
