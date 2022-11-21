@@ -8,13 +8,8 @@
 @import "0-settings/settings.typography";
 @import "0-settings/settings.color";
 
-
-
 // VENDORS
-@import "1-vendors/vendors.keen-slider";
-
-
-
+// @import "1-vendors/vendors.keen-slider";
 
 // TOOLS
 @import "2-tools/tools.functions";
@@ -22,15 +17,11 @@
 @import "2-tools/tools.hidden";
 @import "2-tools/tools.color";
 
-
-
 // GENERIC
 @import "3-generic/generic.box-sizing";
 @import "3-generic/generic.normalize";
 @import "3-generic/generic.reset";
 @import "3-generic/generic.shared";
-
-
 
 // ELEMENTS
 @import "4-elements/elements.document";
@@ -45,29 +36,18 @@
 @import "4-elements/elements.forms";
 @import "4-elements/elements.buttons";
 
-
-
 // OBJECTS
-@import "5-objects/objects.buttons";
-@import "5-objects/objects.grid";
-
-
-
-
-
+// @import "5-objects/objects.buttons";
+// @import "5-objects/objects.grid";
 
 // COMPONENTS
-@import "6-components/components.buttons";
-
-
+// @import "6-components/components.buttons";
 
 // THEMES
-
-
-
+@import "7-themes/themes.3e";
 
 // UTILITIES
-@import "8-utilities/utilities.helper";
+// @import "8-utilities/utilities.helper";
 
 
 
