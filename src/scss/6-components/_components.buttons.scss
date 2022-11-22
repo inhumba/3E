@@ -2,105 +2,12 @@
    #BUTTONS
    ========================================================================== */
 
-.btn, %btn {
-    background-color: type-color("primary", "disabled");
-    font-family: "ibm-plex-thai",sans-serif;
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #fff;
     border: none;
-    border-radius: 0 !important;
-    color:#fff;
-    font-size: 14px;
-    font-weight:  $ibm-weight-regular;
-    letter-spacing: ($global-letter-spacing * 2);
-    line-height: 1.6;
-    text-align: center;
+    background-color: darken($primary-color, 15%);
 }
 
-.btn {
-
-    &:hover,
-    &:focus {
-        background-color: tint(type-color("primary"), 50%);
-    }
-
-    &.btn--small {
-        // border-radius: ($button-border-radius / 2);
-        font-size: .8em;
-        font-weight: 500;
-    }
-
-    > [class^="fa-"] {
-        font-size: 1.1em;
-    }
-
-    &:disabled {
-        background-color: type-color("primary");
-        color: #fff;
-        opacity: .3;
-    }
-}
-
-@each $state in primary, secondary, info, success, warning, danger {
-    .btn--#{$state} {
-        @extend %btn;
-        background-color: type-color("#{$state}") !important;
-        color: #fff !important;
-        transition: all .3s;
-
-        &:hover,
-        &:focus {
-            background-color: tint(type-color("#{$state}"), 30%) !important;
-            color: #fff;
-        }
-
-        &:disabled {
-            background-color: type-color("primary") !important;
-            opacity: .4 !important;
-        }
-
-        @if $state == primary {
-            // &:hover,
-            // &:focus {
-            //     background-color: palette-color("lucky", "dark-purple") !important;
-            // }
-        }
-
-        &-outline {
-            @extend %btn;
-            background-color: transparent !important;
-            box-shadow: none !important;
-            color: type-color("#{$state}") !important;
-            border: 1px solid type-color("#{$state}") !important;
-            transition: all .3s;
-            i {
-                color: type-color("#{$state}") !important;
-            }
-
-            &:hover,
-            &:focus {
-                background-color: type-color("#{$state}") !important;
-                color: #fff !important;
-
-                >i {
-                    color: #fff !important;
-                }
-            }
-            &:disabled{
-                background-color: #fff!important;
-                border-color: tint(type-color("#{$state}"), 30%)!important;
-                color: tint(type-color("#{$state}"), 30%)!important;
-            }
-        }
-    }
-}
-
-.btn--see-more {
-    @extend %btn;
-    background-color: $highlight-color !important;
-    border: 1px solid $highlight-color !important;
-    box-shadow: none !important;
-    color: #fff !important;
-    &:hover{
-        background-color: #39B5AB!important;
-        border: 1px solid #39B5AB!important;
-    }
+.form-control:focus, .btn:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(124,193,182,.3);
 }

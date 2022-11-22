@@ -54,7 +54,7 @@ $input-font-color: $base-font-color;
  * Placeholder color
  */
 
-$placeholder-font-color: darken($global-border-color, 100%);
+$placeholder-font-color: $primary-color;
 
 /**
  * Button color

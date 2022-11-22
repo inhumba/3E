@@ -5,6 +5,10 @@
 .logo {
    @include replace-text-with-img("logo.png", center center, 400px, 111px, .4);
    margin-bottom: 0;
+
+   @include mq(tablet-wide) {
+      @include replace-text-with-img("logo.png", center center, 400px, 111px, .6);
+   }
 }
 
 .language {
@@ -16,6 +20,10 @@
       span {
          margin-left: 5px;
       }
+   }
+
+   .dropdown-item:focus, .dropdown-item:hover {
+      background-color: $secondary-light-color;
    }
 
    .dropdown-menu {
@@ -36,10 +44,63 @@
       font-weight: 800;
       font-size: 6.5rem;
       line-height: 1.1;
+      @include mq(tablet-wide) {
+         font-size: 8rem;
+      }
    }
 
    .lead {
       color: $primary-color;
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1.4;
+      margin-bottom: 0;
+
+      b {
+         font-weight: 600;
+         white-space: nowrap;
+      }
+
+      @include mq(tablet-wide) {
+         font-size: 1.4em;
+      }
+   }
+}
+
+.login {
+
+   margin: 0 auto;
+   width: 100%;
+   max-width: 500px;
+
+   .form-control {
+      border: none;
+      border-radius: $input-border-radius 0 0 $input-border-radius;
+      font-size: 1em;
+      color: $primary-color;
+      padding: 15px;
+      margin-bottom: 0;
+      @include input-placeholder {
+         color: $placeholder-font-color;
+      }
+   }
+
+   .btn {
+      border: none;
+      border-radius: 0 $input-border-radius $input-border-radius 0;
+      font-size: 1em;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 15px 25px;
+      font-weight: 600;
+   }
+
+}
+
+.info-text {
+
+   p {
+      color: $font-black-color;
       font-weight: 400;
       font-size: 1.2em;
       line-height: 1.4;
@@ -49,4 +110,16 @@
          white-space: nowrap;
       }
    }
+
+   .highlight {
+      color: $highlight-color;
+      font-weight: 800;
+   }
+
+   .article {
+      @include mq(tablet-wide) {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+
 }
