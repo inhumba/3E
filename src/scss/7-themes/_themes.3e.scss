@@ -71,14 +71,14 @@
 
    margin: 0 auto;
    width: 100%;
-   max-width: 500px;
+   max-width: 520px;
 
    .form-control {
       border: none;
       border-radius: $input-border-radius 0 0 $input-border-radius;
       font-size: 1em;
       color: $primary-color;
-      padding: 15px;
+      padding: 15px 25px;
       margin-bottom: 0;
       @include input-placeholder {
          color: $placeholder-font-color;
@@ -93,6 +93,19 @@
       color: #fff;
       padding: 15px 25px;
       font-weight: 600;
+   }
+
+   .invalid-tooltip {
+      font-size: .8em;
+      background-color: rgba(255, 145, 120, .8);
+      padding: 5px 20px;
+      width: 100%;
+      margin-top: 3px;
+   }
+
+   .form-control.is-invalid, .was-validated .form-control:invalid,
+   .form-control.is-valid, .was-validated .form-control:valid {
+      background-image: none;
    }
 
 }

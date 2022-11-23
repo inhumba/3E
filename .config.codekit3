@@ -7,7 +7,7 @@
       "uuidString" : "D789A0EA-5046-4CFB-AA84-0C35F60338F1"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34434",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -42,19 +42,6 @@
       "iS" : 29212,
       "oA" : 0,
       "oAP" : "\/assets\/img\/favicon.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/img\/home-img.png" : {
-      "ft" : 32768,
-      "iS" : 75608,
-      "oA" : 0,
-      "oAP" : "\/assets\/img\/home-img.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -569,6 +556,19 @@
       "oS" : 3,
       "pg" : 0,
       "sct" : 1
+    },
+    "\/uploads\/home-img.png" : {
+      "ft" : 32768,
+      "iS" : 75608,
+      "oA" : 0,
+      "oAP" : "\/uploads\/home-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     }
   },
   "hooks" : [
@@ -1289,7 +1289,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
@@ -1451,7 +1452,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -2079,6 +2081,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,
