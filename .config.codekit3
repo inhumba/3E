@@ -557,11 +557,32 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/thanks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/thanks.html",
+      "oF" : 0
+    },
     "\/uploads\/home-img.png" : {
       "ft" : 32768,
       "iS" : 75608,
       "oA" : 0,
       "oAP" : "\/uploads\/home-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/uploads\/thanks-img.png" : {
+      "ft" : 32768,
+      "iS" : 488653,
+      "oA" : 0,
+      "oAP" : "\/uploads\/thanks-img.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

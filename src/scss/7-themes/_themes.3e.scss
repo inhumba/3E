@@ -136,3 +136,13 @@
    }
 
 }
+
+.thanks-page {
+   background-image: linear-gradient(315deg, rgb(255,199,196) 0%, rgb(255,255,255) 100%);
+
+   .content {
+      height: 100vh;
+      background-size: cover;
+      background-position: 50%;
+   }
+}
