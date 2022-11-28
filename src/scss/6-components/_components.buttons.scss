@@ -11,3 +11,14 @@
 .form-control:focus, .btn:focus-visible {
     box-shadow: 0 0 0 0.25rem rgba(124,193,182,.3);
 }
+
+.btn {
+    border: none;
+    border-radius: 100px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+}

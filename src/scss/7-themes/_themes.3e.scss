@@ -44,6 +44,7 @@
       font-weight: 800;
       font-size: 6.5rem;
       line-height: 1.1;
+
       @include mq(tablet-wide) {
          font-size: 8rem;
       }
@@ -135,6 +136,50 @@
       }
    }
 
+}
+
+.instructions-page {
+
+   .language {
+      display: none;
+   }
+
+   .hero {
+
+      .instructions-img {
+         max-width: 800px;
+         width: 100%;
+      }
+
+      .lead {
+         color: $font-black-color;
+         font-weight: 400;
+         font-size: 1.2em;
+         line-height: 1.4;
+      }
+   
+      .highlight {
+         color: $highlight-color;
+         font-weight: 800;
+      }
+   }
+
+   .info-text {
+      p {
+         border-left: 3px solid $highlight-color;
+         padding-left: 1em;
+      }
+   }
+
+   .article {
+      max-width: 800px;
+      width: 100%;
+
+      @include mq(tablet-wide) {
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
+      }
+   }
 }
 
 .thanks-page {

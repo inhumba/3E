@@ -84,6 +84,14 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/instructions.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/instructions.html",
+      "oF" : 0
+    },
     "\/src\/scss\/0-settings\/_settings.color.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -570,6 +578,19 @@
       "iS" : 75608,
       "oA" : 0,
       "oAP" : "\/uploads\/home-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/uploads\/instructions-img.png" : {
+      "ft" : 32768,
+      "iS" : 21613,
+      "oA" : 0,
+      "oAP" : "\/uploads\/instructions-img.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
