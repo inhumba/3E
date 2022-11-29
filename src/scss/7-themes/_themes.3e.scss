@@ -68,6 +68,75 @@
    }
 }
 
+.cover {
+   min-height: 300px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
+   position: relative;
+
+   @include mq(tablet-wide) {
+      min-height: 400px;
+   }
+
+   @include mq(desktop) {
+      min-height: 550px;
+   }
+}
+
+.progress {
+   position: absolute;
+   display: block;
+   height: 60px;
+   width: 60px;
+   bottom: 10px;
+   right: 30px;
+   background-color: $secondary-light-color;
+   border-radius: 100px;
+   text-align: center;
+   z-index: 300;
+   overflow: inherit;
+
+   .progress-bar {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      background-color: $primary-color;
+      display: block;
+      width: 2px;
+      height: 40px;
+      z-index: 350;
+      transform-origin: bottom;
+   }
+
+   .text {
+      color: darken($secondary-color, 10%);
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 90px;
+      padding-left: 5px;
+      position: relative;
+      z-index: 400;
+   }
+
+   @include mq(tablet) {
+      height: 80px;
+      width: 80px;
+      bottom: -10px;
+      right: 10vw;
+
+      .progress-bar {
+         height: 60px;
+      }
+
+      .text {
+         font-size: 1.4rem;
+         line-height: 115px;
+      }
+   }
+}
+
 .login {
 
    margin: 0 auto;
@@ -194,22 +263,7 @@
       position: absolute;
       top: 0;
       width: 100%;
-   }
-
-   .cover {
-      min-height: 300px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: scroll;
-      background-size: cover;
-
-      @include mq(tablet-wide) {
-         min-height: 400px;
-      }
-
-      @include mq(desktop) {
-         min-height: 550px;
-      }
+      z-index: 100;
    }
 
    .topic {
