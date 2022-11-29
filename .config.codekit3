@@ -622,9 +622,22 @@
     },
     "\/uploads\/thanks-img.png" : {
       "ft" : 32768,
-      "iS" : 488653,
+      "iS" : 676242,
       "oA" : 0,
       "oAP" : "\/uploads\/thanks-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/uploads\/thanks-imgq.png" : {
+      "ft" : 32768,
+      "iS" : 488653,
+      "oA" : 0,
+      "oAP" : "\/uploads\/thanks-imgq.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

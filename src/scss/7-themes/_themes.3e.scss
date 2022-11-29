@@ -341,11 +341,24 @@
 }
 
 .thanks-page {
-   background-image: linear-gradient(315deg, rgb(255,199,196) 0%, rgb(255,255,255) 100%);
+   background-color: $secondary-color;
 
-   .content {
+   .language {
+      display: none;
+   }
+
+   .site-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+   }
+
+   .thanks-img {
+      display: flex;
       height: 100vh;
-      background-size: cover;
-      background-position: 50%;
+      width: 100vw;
+      object-fit: cover;
+      object-position: center;
    }
 }
