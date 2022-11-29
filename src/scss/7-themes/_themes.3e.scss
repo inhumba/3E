@@ -112,7 +112,7 @@
 
 }
 
-.info-text {
+.site-content {
 
    p {
       color: $font-black-color;
@@ -165,7 +165,7 @@
       }
    }
 
-   .info-text {
+   .site-content {
       p {
          border-left: 3px solid $highlight-color;
          padding-left: 1em;
@@ -181,6 +181,109 @@
          justify-content: center;
       }
    }
+}
+
+.feedback-page {
+   background-color: #fff;
+
+   .language {
+      display: none;
+   }
+
+   .site-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+   }
+
+   .cover {
+      min-height: 300px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+      background-size: cover;
+
+      @include mq(tablet-wide) {
+         min-height: 400px;
+      }
+
+      @include mq(desktop) {
+         min-height: 550px;
+      }
+   }
+
+   .topic {
+      font-size: 1.2em;
+      font-weight: 800;
+      text-align: center;
+      white-space: nowrap;
+
+      @include mq(tablet) {
+         font-size: 1.4em;
+      }
+
+      @include mq(desktop) {
+         font-size: 1.8em;
+      }
+   }
+
+   .best {
+      .topic {
+         color: $primary-color;
+      }
+      .form-control {
+         border-color: $primary-color;
+
+         @include input-placeholder {
+            color: $primary-color;
+         }
+      }
+   }
+
+   .worst {
+      .topic {
+         color: $secondary-color;
+      }
+
+      .form-control {
+         border-color: $secondary-color;
+
+         @include input-placeholder {
+            color: $secondary-color;
+         }
+         
+         &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(251,200,180,.3);
+         }
+     }
+   }
+   
+   .site-content {
+      max-width: 600px;
+      width: 100%;
+
+      @include mq(desktop) {
+         max-width: 1000px;
+      }
+
+      .hr {
+         height: 2px;
+         background-color: #aaa;
+         margin-block: 5rem;
+      }
+
+      .form-control {
+         border-radius: 15px;
+         height: 150px;
+         padding: 15px 20px;
+         font-size: 1em;
+      }
+   }
+
+   .cta {
+      text-transform: uppercase;
+   }
+
 }
 
 .thanks-page {

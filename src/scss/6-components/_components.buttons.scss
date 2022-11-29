@@ -21,4 +21,8 @@
 
 .btn-primary {
     background-color: $primary-color;
+
+    &:hover, &:focus {
+        background-color: darken($primary-color, 15%);
+    }
 }

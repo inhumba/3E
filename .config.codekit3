@@ -76,6 +76,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/feedback.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/feedback.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -572,6 +580,19 @@
       "oA" : 0,
       "oAP" : "\/thanks.html",
       "oF" : 0
+    },
+    "\/uploads\/feedback-img.png" : {
+      "ft" : 32768,
+      "iS" : 317355,
+      "oA" : 0,
+      "oAP" : "\/uploads\/feedback-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/uploads\/home-img.png" : {
       "ft" : 32768,
