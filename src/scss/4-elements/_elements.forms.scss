@@ -2,13 +2,10 @@
    #FORMS
    ========================================================================== */
 
-// form {}
-
-// fieldset {}
-.field{
-	display: flex;
-	align-items: center;
+fieldset {
+	margin-bottom: 0;
 }
+
 legend {
 	font-weight: $base-font-weight--bold;
 }
@@ -16,6 +13,11 @@ legend {
 label {
 	display: block;
 	margin-bottom: spacing--rem(xs);
+
+	&.label-inline {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 }
 
 input,
@@ -38,18 +40,61 @@ select {
 [type="checkbox"],
 [type="radio"] {
 	display: inline-block;
-	margin-top: -6px;
+	margin-top: 0;
 	margin-right: spacing--rem(s);
 }
 
-// [type="file"] {}
-
-// textarea {}
-
-// select {}
-
-// option {}
-
 abbr[title] {
 	text-decoration: none;
+}
+
+.group {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1.2rem;
+	padding: 0 3px 1px;
+
+	label {
+		margin-top: 3px;
+		line-height: 1.6;
+	}
+}
+
+input:is([type="checkbox"], [type="radio"]) {
+	-webkit-appearance: none;
+	background-image: url(#{$img-path}/unchecked.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1.6em;
+	height: 1.6em;
+	border: none;
+	flex-shrink: 0;
+	
+	&.secondary:checked {
+		background-image: url(#{$img-path}/checked-secondary.svg);
+
+		~ label {
+			color: $secondary-color;
+			font-weight: 600;
+		}
+	}
+
+	&.primary:checked {
+		background-image: url(#{$img-path}/checked-primary.svg);
+
+		~ label {
+			color: $primary-color;
+			font-weight: 600;
+		}
+	}
+
+	@include mq(desktop) {
+		width: 2em;
+		height: 2em;
+
+		~ label {
+			font-size: 1.2em;
+			margin-top: 6px;
+		}
+	}
 }

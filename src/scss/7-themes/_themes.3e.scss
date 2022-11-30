@@ -137,6 +137,24 @@
    }
 }
 
+.question {
+
+   .topic {
+      font-size: 1.2em;
+      font-weight: 800;
+      text-align: center;
+      white-space: nowrap;
+
+      @include mq(tablet) {
+         font-size: 1.4em;
+      }
+
+      @include mq(desktop) {
+         font-size: 1.8em;
+      }
+   }
+}
+
 .login {
 
    margin: 0 auto;
@@ -250,6 +268,97 @@
          justify-content: center;
       }
    }
+}
+
+.demographic-page {
+   background-color: #fff;
+
+   .language {
+      display: none;
+   }
+
+   .site-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+   }
+
+   .topic {
+      white-space: inherit;
+
+      @include mq(desktop) {
+         margin-bottom: 2rem !important;
+      }
+   }
+
+   .question {
+      padding: 1rem;
+
+      @include mq(desktop) {
+         padding: 2rem;
+      }
+
+      &:has(input:is([type="checkbox"], [type="radio"])) {
+         &:hover, &:focus, , &:focus-visible {
+            outline: 2px dotted rgba(0,0,0,.1);
+            border-radius: 15px;
+         }
+      }
+
+      .d-horizontal {
+         @include mq(desktop) {
+            display: flex;
+            justify-content: space-between;
+
+            &.h-2-col {
+               flex-wrap: wrap;
+               
+               .group {
+                  flex-basis: calc(100% / 2);
+               }
+
+               &:after {
+                  content: "";
+                  flex: auto;
+               }
+            }
+
+            &.h-3-col {
+               flex-wrap: wrap;
+               
+               .group {
+                  flex-basis: calc(100% / 3);
+               }
+
+               &:after {
+                  content: "";
+                  flex: auto;
+               }
+            }
+         }
+      }
+   }
+   
+   .site-content {
+      max-width: 600px;
+      width: 100%;
+
+      @include mq(desktop) {
+         max-width: 1000px;
+      }
+
+      .hr {
+         height: 2px;
+         background-color: #aaa;
+         margin-block: 2rem;
+      }
+   }
+
+   .cta {
+      text-transform: uppercase;
+   }
+
 }
 
 .feedback-page {
