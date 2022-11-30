@@ -351,12 +351,24 @@
       .hr {
          height: 2px;
          background-color: #aaa;
-         margin-block: 2rem;
+         margin-block: 3rem;
       }
    }
 
    .cta {
       text-transform: uppercase;
+   }
+
+   .has-validation {
+
+      .invalid-tooltip {
+         display: block;
+         font-size: .8em;
+         background-color: rgba(255,145,120,0.8);
+         padding: 5px 20px;
+         width: 100%;
+         margin-top: 3px;
+      }
    }
 
 }

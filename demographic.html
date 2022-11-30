@@ -73,14 +73,14 @@
         </aside>
     </section>
 
-    <form action="">
+    <form novalidate>
 
         <main class="site-content px-5 pt-xl-3 mx-auto">
             <div class="container">
 
                 <section class="question mb-3">
                     <h3 class="topic mb-4">Location (checkbox pink)</h3>
-                    <fieldset>
+                    <fieldset class="has-validation">
                         <div class="group">
                             <input class="secondary" type="checkbox" name="location" id="location-1" checked>
                             <label class="label-inline" for="location-1">Head Quarter</label>
@@ -89,6 +89,7 @@
                             <input class="secondary" type="checkbox" name="location" id="location-2">
                             <label class="label-inline" for="location-2">Branch</label>
                         </div>
+                        <div class="invalid-tooltip">Please choose.</div>
                     </fieldset>
                 </section>
 
@@ -324,7 +325,7 @@
 
                 <section class="question mb-3">
                     <h3 class="topic mb-4">Long text choice (Horizontal alignment 2 column on desktop)</h3>
-                    <fieldset class="d-horizontal h-2-col">
+                    <fieldset class="d-horizontal h-2-col has-validation">
                         <div class="group">
                             <input class="secondary" type="radio" name="long-h" id="long-h-1">
                             <label class="label-inline" for="long-h-1">Diploma level</label>
@@ -353,6 +354,7 @@
                             <input class="secondary" type="radio" name="long-h" id="long-h-7">
                             <label class="label-inline" for="long-h-7">Postgraduate (a master’s degree, a doctorate degree)</label>
                         </div>
+                        <div class="invalid-tooltip">Please choose.</div>
                     </fieldset>
                 </section>
 
