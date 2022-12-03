@@ -57,6 +57,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/checked.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/checked.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/favicon.png" : {
       "ft" : 32768,
       "iS" : 29212,
@@ -95,6 +105,26 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/assets\/img\/unchecked-primary.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/unchecked-primary.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/unchecked-secondary.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/unchecked-secondary.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/assets\/img\/unchecked.svg" : {
       "ft" : 2097152,
@@ -136,6 +166,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/instructions.html",
+      "oF" : 0
+    },
+    "\/likert.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/likert.html",
       "oF" : 0
     },
     "\/src\/scss\/0-settings\/_settings.color.scss" : {
@@ -663,6 +701,19 @@
       "iS" : 21613,
       "oA" : 0,
       "oAP" : "\/uploads\/instructions-img.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/uploads\/likert-img.png" : {
+      "ft" : 32768,
+      "iS" : 399730,
+      "oA" : 0,
+      "oAP" : "\/uploads\/likert-img.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
