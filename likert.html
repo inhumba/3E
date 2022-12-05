@@ -115,8 +115,45 @@
                 <hr class="hr">
 
                 <section class="question mb-3">
+                  <h3 class="topic mb-4">I have knowledge suitable for the position. (with validation)</h3>
+                  <fieldset class="has-validation">
+                      <div class="group">
+                          <input class="secondary" type="radio" name="validation" id="validation-1">
+                          <label class="label-inline active" for="validation-1">Strongly Disagree</label>
+                      </div>
+                      <div class="group">
+                          <input class="secondary" type="radio" name="validation" id="validation-2">
+                          <label class="label-inline" for="validation-2">Disagree</label>
+                      </div>
+                      <div class="group">
+                          <input class="secondary" type="radio" name="validation" id="validation-3">
+                          <label class="label-inline" for="validation-3">Somewhat</label>
+                      </div>
+                      <div class="group">
+                          <input class="primary" type="radio" name="validation" id="validation-4">
+                          <label class="label-inline" for="validation-4">Somewhat Agree</label>
+                      </div>
+                      <div class="group">
+                          <input class="primary" type="radio" name="validation" id="validation-5">
+                          <label class="label-inline" for="validation-5">Agree</label>
+                      </div>
+                      <div class="group">
+                          <input class="primary" type="radio" name="validation" id="validation-6">
+                          <label class="label-inline active" for="validation-6">Strongly Agree</label>
+                      </div>
+                      <div class="invalid-tooltip">Please choose.</div>
+                  </fieldset>
+                  <div class="group">
+                      <input type="radio" name="validation" id="validation-7">
+                      <label class="label-inline active" for="validation-7">No Opinion</label>
+                  </div>
+              </section>
+
+              <hr class="hr">
+
+                <section class="question mb-3">
                     <h3 class="topic mb-4">I usually stay calm, even under a lot of pressure. (without No Opinion)</h3>
-                    <fieldset>
+                    <fieldset class="no-opinion">
                         <div class="group">
                             <input class="secondary" type="radio" name="calm" id="calm-1">
                             <label class="label-inline active" for="calm-1">Strongly Disagree</label>
@@ -141,6 +178,39 @@
                             <input class="primary" type="radio" name="calm" id="calm-6">
                             <label class="label-inline active" for="calm-6">Strongly Agree</label>
                         </div>
+                    </fieldset>
+                </section>
+
+                <hr class="hr">
+
+                <section class="question mb-3">
+                    <h3 class="topic mb-4">I usually stay calm, even under a lot of pressure. (without No Opinion and with validation)</h3>
+                    <fieldset class="has-validation no-opinion">
+                        <div class="group">
+                            <input class="secondary" type="radio" name="validate" id="validate-1">
+                            <label class="label-inline active" for="validate-1">Strongly Disagree</label>
+                        </div>
+                        <div class="group">
+                            <input class="secondary" type="radio" name="validate" id="validate-2">
+                            <label class="label-inline" for="validate-2">Disagree</label>
+                        </div>
+                        <div class="group">
+                            <input class="secondary" type="radio" name="validate" id="validate-3">
+                            <label class="label-inline" for="validate-3">Somewhat</label>
+                        </div>
+                        <div class="group">
+                            <input class="primary" type="radio" name="validate" id="validate-4">
+                            <label class="label-inline" for="validate-4">Somewhat Agree</label>
+                        </div>
+                        <div class="group">
+                            <input class="primary" type="radio" name="validate" id="validate-5">
+                            <label class="label-inline" for="validate-5">Agree</label>
+                        </div>
+                        <div class="group">
+                            <input class="primary" type="radio" name="validate" id="validate-6">
+                            <label class="label-inline active" for="validate-6">Strongly Agree</label>
+                        </div>
+                        <div class="invalid-tooltip">Please select one.</div>
                     </fieldset>
                 </section>
 
