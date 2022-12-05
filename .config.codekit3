@@ -17,6 +17,30 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/assets\/css\/bootstrap.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/bootstrap.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/css\/custom.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/custom-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -156,6 +180,28 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/js\/bootstrap.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/bootstrap.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/popper.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/popper.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/demographic.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -268,18 +314,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/sitemap\/sitemap-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/sitemap\/sitemap-min-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/sitemap\/sitemap.css" : {
       "aP" : 1,
