@@ -491,7 +491,20 @@
                font-size: 1em;
             }
          }
-         
+
+         &.tertiary {
+            background-image: url(#{$img-path}/unchecked-tertiary.svg);
+
+            &:checked {
+               background-image: url(#{$img-path}/checked-tertiary.svg);
+            }
+
+            ~ .label-inline {
+               color: $tertiary-color;
+               font-weight: 600;
+            }
+         }
+      
          &.secondary {
             background-image: url(#{$img-path}/unchecked-secondary.svg);
 
