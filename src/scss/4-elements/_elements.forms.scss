@@ -71,14 +71,12 @@ input:is([type="checkbox"], [type="radio"]) {
 	border: none;
 	flex-shrink: 0;
 
-	// &.tertiary:checked {
-	// 	background-image: url(#{$img-path}/checked-tertiary.svg);
-
-	// 	~ label {
-	// 		color: $tertiary-color;
-	// 		font-weight: 600;
-	// 	}
-	// }
+	&:checked {
+		
+		~ label {
+			font-weight: 600;
+		}
+	}
 	
 	&.secondary:checked {
 		background-image: url(#{$img-path}/checked-secondary.svg);

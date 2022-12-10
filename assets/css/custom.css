@@ -1,11 +1,14 @@
 ﻿@charset "UTF-8";
 
-/* Variable */
+/********** Variable **********/
 :root {
     --tertiary-color: #CBC5F1;
+
+    --size-2x: 2.8em;
+    --size-3x: 3.5em;
 }
 
-/* Add more radio color */
+/********** Custom radio color **********/
 /* primary, secondary, tertiary */
 input:is([type="checkbox"], [type="radio"]).tertiary {
     background-image: url(../img/unchecked-tertiary.svg);
@@ -17,4 +20,16 @@ input:is([type="checkbox"], [type="radio"]).tertiary:checked {
 
 input:is([type="checkbox"], [type="radio"]).tertiary ~ .label-inline {
     color: var(--tertiary-color) !important;
+}
+
+/********** Custom radio sizing **********/
+/* 2x, 3x */
+input:is([type="checkbox"], [type="radio"]).size-2x {
+    height: var(--size-2x);
+    width: var(--size-2x);
+}
+
+input:is([type="checkbox"], [type="radio"]).size-3x {
+    height: var(--size-3x);
+    width: var(--size-3x);
 }
