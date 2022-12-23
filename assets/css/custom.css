@@ -33,3 +33,31 @@ input:is([type="checkbox"], [type="radio"]).size-3x {
     height: var(--size-3x);
     width: var(--size-3x);
 }
+
+/********** Loading **********/
+#loader {
+    display: none;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    text-align: center;
+}
+#loader.loading {
+    display: block;
+}
+#loader .loader {
+    background-color: #f3f3f3;
+    background-image: url(../img/loader.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    display: inline-block;
+}
