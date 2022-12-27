@@ -35,19 +35,26 @@
 .hero {
 
    .home-img {
-      max-width: 400px;
+      max-width: 360px;
       width: 100%;
    }
 
    .title {
       color: $primary-color;
       font-weight: 800;
-      font-size: 6.5rem;
+      font-size: 4rem;
       line-height: 1.1;
 
       @include mq(tablet-wide) {
-         font-size: 8rem;
+         font-size: 6rem;
       }
+   }
+
+   .topic {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 1.6em;
+      white-space: nowrap;
    }
 
    .lead {
@@ -305,7 +312,7 @@
       }
 
       &:has(input:is([type="checkbox"], [type="radio"])) {
-         &:hover, &:focus, , &:focus-visible {
+         &:hover, &:focus, &:focus-visible {
             outline: 2px dotted rgba(0,0,0,.1);
             border-radius: 15px;
          }
@@ -466,7 +473,7 @@
       }
 
       &:has(input:is([type="checkbox"], [type="radio"])) {
-         &:hover, &:focus, , &:focus-visible {
+         &:hover, &:focus, &:focus-visible {
             outline: 2px dotted rgba(0,0,0,.1);
             border-radius: 15px;
          }
